@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     width: '30%',
   },
   serviceCardText: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#333',
     marginTop: 10,
     fontWeight: 'bold',

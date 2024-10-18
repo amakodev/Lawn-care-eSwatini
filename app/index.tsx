@@ -1,14 +1,19 @@
+import React from "react";
+import { Stack } from "expo-router";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import NavigationDrawer from "./components/NavigationDrawer";
+import { Text } from "react-native";
+import HomeScreen from "./components/Home";
 
-import ContactUsScreen from "./screens/ContactUsScreen";
-import HomeScreen from "./screens/HomeScreen";
-import LawnRequestFormScreen from "./screens/LawnRequestFormScreen";
-import ServiceScreen from "./screens/ServiceScreen";
-
-export default function Index() {
+const App = () => {
   return (
-    // <HomeScreen />
-    // <ServiceScreen />
-    // <LawnRequestFormScreen />
-    <ContactUsScreen />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationDrawer>
+        <Stack />
+        <HomeScreen />
+      </NavigationDrawer>
+    </GestureHandlerRootView>
   );
-}
+};
+
+export default App;
